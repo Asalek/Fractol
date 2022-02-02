@@ -6,11 +6,11 @@
 /*   By: asalek <asalek@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/21 20:06:39 by asalek            #+#    #+#             */
-/*   Updated: 2022/01/21 20:06:40 by asalek           ###   ########.fr       */
+/*   Updated: 2022/02/02 19:34:31 by asalek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "include/fractol.h"
 
 void	available_fractols(void)
 {
@@ -31,7 +31,8 @@ void	how_to_use(void)
 {
 	printf(":: To get into the fractal world type one of bellow :\n");
 	printf("\n\t./fractol mandelbrot");
-	printf("\n\t./fractol julia\n\n");
+	printf("\n\t./fractol julia");
+	printf("\n\t./fractol burningship\n\n");
 }
 
 int	check_fractal_type(char *str1)
@@ -40,11 +41,13 @@ int	check_fractal_type(char *str1)
 		return (1);
 	if (ft_strcmp(str1, "julia") == 0)
 		return (2);
+	if (ft_strcmp(str1, "burningship") == 0)
+		return (3);
 	else
 		return (0);
 }
 
-int main(int ac, char *av[])
+int	main(int ac, char *av[])
 {
 	available_fractols();
 	if (ac != 2)
@@ -59,4 +62,6 @@ int main(int ac, char *av[])
 		start_mandelbrot();
 	if (check_fractal_type(av[1]) == 2)
 		start_julia();
+	if (check_fractal_type(av[1]) == 3)
+		start_burningship();
 }
