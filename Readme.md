@@ -1,22 +1,26 @@
 # FRACTALS
 
 This Project contains a Fractals Sets such as :
+
 ##Mandelbrot Set
-[mandelbrot_Set] (https://en.wikipedia.org/wiki/Mandelbrot_set)
+
+[mandelbrot_Set definition](https://en.wikipedia.org/wiki/Mandelbrot_set)
 <p>
-	<img src="../IMG/Mandelbrot_Set.png" alt="Mandelbrot_Set" width=50% height=auto>
+	<img src="https://github.com/Asalek/Fractol/blob/main/IMG/Mandelbrot_Set.png" alt="Mandelbrot_Set" width=70% height=auto>
 </p>
 
 ##Julia Set
-[Julia_Set] (https://en.wikipedia.org/wiki/Julia_set)
+
+[Julia_Set definition](https://en.wikipedia.org/wiki/Julia_set)
 <p>
-	<img src="../IMG/Julia_Set.png" alt="Julia_Set" width=50% height=auto>
+	<img src="https://github.com/Asalek/Fractol/blob/main/IMG/Julia_Set.png" alt="Julia_Set" width=70% height=auto>
 </p>
 
 ##Burning ship Set
-[Burning_Ship] (https://en.wikipedia.org/wiki/Burning_Ship_fractal)
+
+[Burning_Ship definition](https://en.wikipedia.org/wiki/Burning_Ship_fractal)
 <p>
-	<img src="../IMG/Julia_Set.png" alt="Burning_Ship" width=50% height=auto>
+	<img src="https://github.com/Asalek/Fractol/blob/main/IMG/Burning_Ship.png" alt="Burning_Ship" width=70% height=auto>
 </p>
 
 ##More is coming..
@@ -24,17 +28,17 @@ This Project contains a Fractals Sets such as :
 #Formal definition
 every thing has start with this equation :
 <p>
-	<img src="../IMG/equation.png" alt="Format" width=70% height=auto>
+	<img src="https://github.com/Asalek/Fractol/blob/main/IMG/equation.png" alt="Format" width=70% height=auto>
 </p>
 
 ##How To Use
-```bash
-Git Clone https://github.com/Asalek/Fractol.git
-cd Fractol
-Make
-./fractol mandelbrot
-./fractol julia
-./fractol burningship
+```
+ Git Clone https://github.com/Asalek/Fractol.git
+ cd Fractol
+ Make
+ ./fractol mandelbrot
+ ./fractol julia
+ ./fractol burningship
 ```
 
 ## Installation
