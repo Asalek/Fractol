@@ -1,6 +1,7 @@
 # FRACTALS
+A fractal is a never-ending pattern. Fractals are infinitely complex patterns that are self-similar across different scales. They are created by repeating a simple process over and over in an ongoing feedback loop. Driven by recursion, fractals are images of dynamic systems – the pictures of Chaos.
 
-This Project contains a Fractals Sets such as :
+In order to represent Fractasl i made this project that contains a Fractals Sets such as :
 
 ## Mandelbrot Set
 
@@ -23,7 +24,9 @@ This Project contains a Fractals Sets such as :
 	<img src="https://github.com/Asalek/Fractol/blob/main/IMG/Burning_Ship.png" alt="Burning_Ship" width=70% height=auto>
 </p>
 
-## More is coming..
+## Youtube Video
+
+![Click To Watch](https://www.youtube.com/watch?v=ZM5POiGpRik&t=46s&ab_channel=DEVAsalek "Everything Is AWESOME")
 
 # Formal definition
 every thing has start with this equation :
@@ -51,9 +54,8 @@ git clone https://github.com/42Paris/minilibx-linux.git
 
 ## MLX Usage
 
-```
-[MLX DOCS] (https://harm-smits.github.io/42docs/libs/minilibx/getting_started.html)
-```
+[MLX DOCS](https://harm-smits.github.io/42docs/libs/minilibx/getting_started.html)
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
@@ -61,4 +63,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-[MIT] (https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/)
