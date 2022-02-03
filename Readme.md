@@ -2,36 +2,36 @@
 
 This Project contains a Fractals Sets such as :
 
-##Mandelbrot Set
+## Mandelbrot Set
 
 [mandelbrot_Set definition](https://en.wikipedia.org/wiki/Mandelbrot_set)
 <p>
 	<img src="https://github.com/Asalek/Fractol/blob/main/IMG/Mandelbrot_Set.png" alt="Mandelbrot_Set" width=70% height=auto>
 </p>
 
-##Julia Set
+## Julia Set
 
 [Julia_Set definition](https://en.wikipedia.org/wiki/Julia_set)
 <p>
 	<img src="https://github.com/Asalek/Fractol/blob/main/IMG/Julia_Set.png" alt="Julia_Set" width=70% height=auto>
 </p>
 
-##Burning ship Set
+## Burning ship Set
 
 [Burning_Ship definition](https://en.wikipedia.org/wiki/Burning_Ship_fractal)
 <p>
 	<img src="https://github.com/Asalek/Fractol/blob/main/IMG/Burning_Ship.png" alt="Burning_Ship" width=70% height=auto>
 </p>
 
-##More is coming..
+## More is coming..
 
-#Formal definition
+# Formal definition
 every thing has start with this equation :
 <p>
 	<img src="https://github.com/Asalek/Fractol/blob/main/IMG/equation.png" alt="Format" width=70% height=auto>
 </p>
 
-##How To Use
+## How To Use
 ```
  Git Clone https://github.com/Asalek/Fractol.git
  cd Fractol
