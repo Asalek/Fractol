@@ -25,8 +25,9 @@ In order to represent Fractasl i made this project that contains a Fractals Sets
 </p>
 
 ## Youtube Video
+[Click To Watch](https://www.youtube.com/watch?v=ZM5POiGpRik&t=46s&ab_channel=DEVAsalek)
 
-![Click To Watch](https://www.youtube.com/watch?v=ZM5POiGpRik&t=46s&ab_channel=DEVAsalek "Everything Is AWESOME")
+[![Click To Watch](https://i.ytimg.com/vi/xLgaoorsi9U/hqdefault.jpg)](https://www.youtube.com/watch?v=ZM5POiGpRik&t=46s&ab_channel=DEVAsalek)
 
 # Formal definition
 every thing has start with this equation :
