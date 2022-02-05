@@ -6,7 +6,7 @@
 /*   By: asalek <asalek@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 14:57:47 by asalek            #+#    #+#             */
-/*   Updated: 2022/02/02 20:05:26 by asalek           ###   ########.fr       */
+/*   Updated: 2022/02/05 16:11:56 by asalek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,8 +61,6 @@ void	burningship(t_info *s)
 	mlx_string_put(s->mlx_ptr, s->win_ptr, 699, 9, 0xFFFFFF, "By_ASALEK");
 	mlx_string_put(s->mlx_ptr, s->win_ptr, 700, 10, 0x000000, "By_ASALEK");
 }
-//a = s->xmin + (s->x / (double)200);//ctl+(7jm)_77
-//b = s->ymax - (s->y / (double)200);//ctl-_74_rm_78
 
 int	start_burningship(void)
 {	

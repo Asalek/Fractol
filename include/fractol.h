@@ -6,7 +6,7 @@
 /*   By: asalek <asalek@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 19:41:24 by asalek            #+#    #+#             */
-/*   Updated: 2022/02/02 20:45:51 by asalek           ###   ########.fr       */
+/*   Updated: 2022/02/04 21:59:10 by asalek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 # define MAX_Y 2
 # define X_AXIS 800
 # define Y_AXIS 800
-# define ITERATION 130 //details in fractals
+# define ITERATION 130 //details in fractals setss
 # define C_A 0.111//-0.8
 # define C_B 0.296//0
 
@@ -47,6 +47,17 @@ typedef struct infos
 	int		color;
 	int		julia_or_mandelbrot;
 }	t_info;
+
+typedef struct images
+{
+	void	*mlx;
+	void	*win;
+	void	*image;
+	void	*path;
+	int		width;
+	int		height;
+	int		ret;
+}	t_img;
 
 int		zoom_in_out(int keycode, int x, int y, t_info *s);
 void	mandelbrot_draw(double a, double b, t_info *s);

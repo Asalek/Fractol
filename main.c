@@ -6,24 +6,18 @@
 /*   By: asalek <asalek@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/21 20:06:39 by asalek            #+#    #+#             */
-/*   Updated: 2022/02/02 19:34:31 by asalek           ###   ########.fr       */
+/*   Updated: 2022/02/05 16:13:34 by asalek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "include/fractol.h"
 
-void	available_fractols(void)
-{
-	printf(":: This is the available fractals :\n");
-	printf("\t- Mandelbrot Set\n");
-	printf("\t- Julia Set\n\n");
-}
-
 void	tutorial(void)
 {
-	printf("::		available key to use		  ::\n");
+	printf("\n::		available key to use		  ::\n");
 	printf(":: You can use arrows to move : ↑ ↓ → ← 	  ::\n");
 	printf(":: Mouse Wheel can zoom in and out		  ::\n");
+	printf(":: C Key Will Change the color in all fractals    ::\n");
 	printf(":: For Julia (A,W,S,D) to change the shape 	  ::\n");
 }
 
@@ -47,21 +41,33 @@ int	check_fractal_type(char *str1)
 		return (0);
 }
 
-int	main(int ac, char *av[])
+int	choose(int keycode, t_img *t)
 {
-	available_fractols();
-	if (ac != 2)
+	if (keycode == 53)
 	{
-		how_to_use();
+		mlx_destroy_window(t->mlx, t->win);
 		exit(0);
 	}
-	tutorial();
-	if (check_fractal_type(av[1]) == 0)
-		how_to_use();
-	if (check_fractal_type(av[1]) == 1)
+	if (keycode == 18 || keycode == 83)
 		start_mandelbrot();
-	if (check_fractal_type(av[1]) == 2)
+	if (keycode == 19 || keycode == 84)
 		start_julia();
-	if (check_fractal_type(av[1]) == 3)
+	if (keycode == 20 || keycode == 85)
 		start_burningship();
+	return (0);
+}
+
+int	main(void)
+{
+	t_img	t;
+
+	tutorial();
+	t.path = "./IMG/fract.xpm";
+	t.mlx = mlx_init();
+	t.image = mlx_xpm_file_to_image(t.mlx, t.path, &t.width, &t.height);
+	t.win = mlx_new_window(t.mlx, 600, 600, "Fractal's Home");
+	mlx_put_image_to_window(t.mlx, t.win, t.image, 0, 0);
+	mlx_key_hook(t.win, choose, &t);
+	mlx_loop(t.mlx);
+	return (0);
 }
